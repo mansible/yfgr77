@@ -1,0 +1,10 @@
+[Unit]
+Description=Testing Service
+After=network.target
+[Service]
+PIDFile=/run/test.pid
+Type=simple
+User=root
+ExecStart=/home/kali/test.sh
+[Install]
+WantedBy=multi-user.target
